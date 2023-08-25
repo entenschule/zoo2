@@ -1,1 +1,3 @@
-from .clawnum import clawnum
+class CatProperties:
+
+    from .clawnum import clawnum
