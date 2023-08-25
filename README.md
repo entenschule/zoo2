@@ -1,4 +1,4 @@
-# zoo
+# zoo2
 
 Not to be confused with the previous version [_zoo_](https://github.com/entenschule/zoo/tree/main).
 
