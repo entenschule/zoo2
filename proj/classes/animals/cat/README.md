@@ -9,7 +9,7 @@ The properties _clawnum_ and _pawnum_ are calculated based on the numbers of leg
 
 The gist of this code is, that the properties do not appear in the class definition of _Cat_.<br>
 Instead they are in the class definition of _CatProperties_, which contains nothing else.<br>
-This will make it possible to add and remove properties with a script.
+This makes it possible to add properties with the script [_prop_maker_](../../../scripts/prop_maker).
 
 
 * **cat**

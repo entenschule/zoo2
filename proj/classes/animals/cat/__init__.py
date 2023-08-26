@@ -1,4 +1,4 @@
-from proj.animals.cat.properties import CatProperties
+from proj.classes.animals.cat.properties import CatProperties
 
 
 class Cat(CatProperties):
