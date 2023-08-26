@@ -9,7 +9,7 @@ The properties _clawnum_ and _pawnum_ are calculated based on the numbers of leg
 
 The gist of this code is, that the properties do not appear in the class definition of _Cat_.<br>
 Instead they are in the class definition of _CatProperties_, which contains nothing else.<br>
-This makes it possible to add properties with the script [_prop_maker_](../../../scripts/prop_maker).
+This makes it possible to add and remove properties [automatically](../../../scripts/prop).
 
 
 * **cat**
@@ -25,6 +25,6 @@ This makes it possible to add properties with the script [_prop_maker_](../../..
     * **claws_per_paw** &nbsp; (depending on _clawnum_ and _pawnum_)
       * [init](properties/claws_per_paw/__init__.py): &nbsp; calculate _claws_per_paw_
       * [test](properties/claws_per_paw/_test.py): &nbsp; check if _claws_per_paw_ works
-    * **whiskers** &nbsp; (raw property as added by _prop_maker_)
+    * **whiskers** &nbsp; (raw property as added by the script)
       * [init](properties/whiskers/__init__.py): &nbsp; dummy of _whiskers_
       * [test](properties/whiskers/_test.py): &nbsp; dummy test of _whiskers_
