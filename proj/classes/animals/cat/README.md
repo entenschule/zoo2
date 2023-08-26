@@ -22,3 +22,9 @@ This makes it possible to add properties with the script [_prop_maker_](../../..
     * **pawnum**
       * [init](properties/pawnum/__init__.py): &nbsp; calculate _pawnum_
       * [test](properties/pawnum/_test.py): &nbsp; check if _pawnum_ works
+    * **claws_per_paw** &nbsp; (depending on _clawnum_ and _pawnum_)
+      * [init](properties/claws_per_paw/__init__.py): &nbsp; calculate _claws_per_paw_
+      * [test](properties/claws_per_paw/_test.py): &nbsp; check if _claws_per_paw_ works
+    * **whiskers** &nbsp; (raw property as added by _prop_maker_)
+      * [init](properties/whiskers/__init__.py): &nbsp; dummy of _whiskers_
+      * [test](properties/whiskers/_test.py): &nbsp; dummy test of _whiskers_
