@@ -5,7 +5,7 @@ These scripts add and remove properties of a class.
 
 ## create
 
-`python -m proj.scripts.prop.create animals.cat whiskers`
+`python -m proj.scripts.prop create animals.cat whiskers`
 
 The example command shown above is to be run in the root folder (_zoo2_),<br>
 and will do the following:
@@ -30,7 +30,7 @@ and [that](../../classes/animals/cat/properties/names.py)).
 
 ## delete
 
-`python -m proj.scripts.prop.create animals.cat tail`
+`python -m proj.scripts.prop delete animals.cat tail`
 
 The example command shown above is to be run in the root folder (_zoo2_),<br>
 and will do the following:
@@ -38,3 +38,16 @@ and will do the following:
 * remove folder _animals/cat/properties/tail_ and its contents
 * remove the corresponding entry from imports and names
 * append the log file
+
+----
+
+In the [main](__main__.py) file the parameters are passed to `prop_fun` in [_function.py_](function.py).<br>
+That can also be called directly:
+
+```python
+from proj.scripts.prop.function import prop_fun
+
+
+prop_fun('create', 'animals.cat', 'ears')
+prop_fun('delete', 'animals.cat', 'ears')
+```
