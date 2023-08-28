@@ -3,5 +3,4 @@ names = [
     'pawnum',
     'claws_per_paw',
     'whiskers',
-    'foo',
 ]

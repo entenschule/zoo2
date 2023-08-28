@@ -1,6 +1,6 @@
 import pytest
 
-from proj.scripts.prop.function import (prop_fun)
+from proj.scripts.prop.function import prop_fun
 
 
 @pytest.fixture(scope='session')
