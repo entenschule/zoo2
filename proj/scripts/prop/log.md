@@ -1,4 +1,4 @@
-# log of added and removed properties
+# log of created and deleted properties
 
 Table rows are appended automatically.
 

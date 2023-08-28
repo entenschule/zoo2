@@ -1,4 +1,4 @@
-# add and remove properties
+# create and delete properties
 
 These scripts add and remove properties of a class.
 
