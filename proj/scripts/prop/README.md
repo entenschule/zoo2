@@ -5,7 +5,9 @@ These scripts add and remove properties of a class.
 
 ## create
 
-`python -m proj.scripts.prop create animals.cat whiskers`
+```
+python -m proj.scripts.prop create animals.cat whiskers
+```
 
 The example command shown above is to be run in the root folder (_zoo2_),<br>
 and will do the following:
@@ -30,7 +32,9 @@ and [that](../../classes/animals/cat/properties/names.py)).
 
 ## delete
 
-`python -m proj.scripts.prop delete animals.cat tail`
+```
+python -m proj.scripts.prop delete animals.cat tail
+```
 
 The example command shown above is to be run in the root folder (_zoo2_),<br>
 and will do the following:

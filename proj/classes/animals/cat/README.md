@@ -17,14 +17,10 @@ This makes it possible to add and remove properties [automatically](../../../scr
   * **properties**
     * [init](properties/__init__.py): &nbsp; _CatProperties_ contains the imports from subfolders.
     * **clawnum**
-      * [init](properties/clawnum/__init__.py): &nbsp; calculate _clawnum_
-      * [test](properties/clawnum/_test.py): &nbsp; check if _clawnum_ works
+      * [init](properties/clawnum/__init__.py) and [test](properties/clawnum/_test.py)
     * **pawnum**
-      * [init](properties/pawnum/__init__.py): &nbsp; calculate _pawnum_
-      * [test](properties/pawnum/_test.py): &nbsp; check if _pawnum_ works
+      * [init](properties/pawnum/__init__.py) and [test](properties/pawnum/_test.py)
     * **claws_per_paw** &nbsp; (depending on _clawnum_ and _pawnum_)
-      * [init](properties/claws_per_paw/__init__.py): &nbsp; calculate _claws_per_paw_
-      * [test](properties/claws_per_paw/_test.py): &nbsp; check if _claws_per_paw_ works
+      * [init](properties/claws_per_paw/__init__.py) and [test](properties/claws_per_paw/_test.py)
     * **whiskers** &nbsp; (raw property as added by the script)
-      * [init](properties/whiskers/__init__.py): &nbsp; dummy of _whiskers_
-      * [test](properties/whiskers/_test.py): &nbsp; dummy test of _whiskers_
+      * [init](properties/whiskers/__init__.py) and [test](properties/whiskers/_test.py)
