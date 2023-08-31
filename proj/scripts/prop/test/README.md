@@ -12,7 +12,10 @@ python -m pytest proj/scripts
 ```
 
 Both tests fail. (Compare [these passing tests](../../../classes/animals/cat/properties/_test.py).)<br>
-They also show, that the appending of the [name file](../../../classes/animals/cat/properties/names.py) has worked,<br>
+They also show, that the update of 
+[_names_](../../../classes/animals/cat/properties/names.py) 
+and [_CatProperties_](../../../classes/animals/cat/properties/__init__.py)
+has worked,<br>
 and that the property folder has been created.<br>
 But the class instance does not reflect the change<br>(although the class is imported after running the script).
 
