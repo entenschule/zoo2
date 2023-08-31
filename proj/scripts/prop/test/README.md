@@ -11,22 +11,10 @@ The tests must be run with the `-m` switch, to add folder _proj_ to the path.
 python -m pytest proj/scripts
 ```
 
-## create
-
-The fixture `prop_foo` in [_conftest.py_](conftest.py) creates the property _foo_.
-
-This works, **but the test fails anyway**:<br>
-`AttributeError: 'Cat' object has no attribute 'foo'`
-
-
-## delete
-
-Eventually the fixture should also delete the property, when the test is finished.<br>
-Currently that has to be done manually:
-
-```
-python -m proj.scripts.prop delete animals.cat foo
-```
+Both tests fail. (Compare [these passing tests](../../../classes/animals/cat/properties/_test.py).)<br>
+They also show, that the appending of the [name file](../../../classes/animals/cat/properties/names.py) has worked,<br>
+and that the property folder has been created.<br>
+But the class instance does not reflect the change<br>(although the class is imported after running the script).
 
 
 ## log
