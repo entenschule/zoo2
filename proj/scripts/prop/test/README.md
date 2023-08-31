@@ -8,7 +8,7 @@ and if no traces remain after removing it.<br>
 The tests must be run with the `-m` switch, to add folder _proj_ to the path.
 
 ```
-python -m pytest proj/scripts
+python -m pytest proj/scripts/prop
 ```
 
 Both tests fail. (Compare [these passing tests](../../../classes/animals/cat/properties/_test.py).)<br>

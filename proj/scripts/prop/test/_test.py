@@ -21,8 +21,7 @@ def test_created_prop():
         assert 'foo' in property_folder_names  # works
 
         with open(properties_file) as f:
-            content = f.read()
-            assert "from .foo import foo" in content  # works
+            assert "from .foo import foo" in f.read()  # works
 
         from proj.classes.animals.cat.properties import CatProperties
         assert hasattr(CatProperties, 'foo')  # FAILS
@@ -46,8 +45,7 @@ def test_deleted_prop():
         assert 'whiskers' not in property_folder_names  # works
 
         with open(properties_file) as f:
-            content = f.read()
-            assert "from .whiskers import whiskers" not in content  # works
+            assert "from .whiskers import whiskers" not in f.read()  # works
 
         from proj.classes.animals.cat.properties import CatProperties
         assert not hasattr(CatProperties, 'whiskers')  # FAILS
