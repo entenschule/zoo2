@@ -1,6 +1,6 @@
 # test creation and deletion of properties
 
-This will test if the function `prop_fun` in [_function.py_](../function.py) works.<br>
+This will test if the function `create_or_delete_property` in [_function.py_](../function.py) works.<br>
 That is the case, if a new property works after adding it,<br>
 and if no traces remain after removing it.<br>
 

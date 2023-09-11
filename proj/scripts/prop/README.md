@@ -33,7 +33,8 @@ and [that](../../classes/animals/cat/properties/names.py)).
 ## delete
 
 ```
-python -m proj.scripts.prop delete animals.cat tail
+python -m proj.scripts.prop create animals.cat nose
+python -m proj.scripts.prop delete animals.cat nose
 ```
 
 The example command shown above is to be run in the root folder (_zoo2_),<br>
@@ -45,13 +46,13 @@ and will do the following:
 
 ----
 
-In the [main](__main__.py) file the parameters are passed to `prop_fun` in [_function.py_](function.py).<br>
+In the [main](__main__.py) file the parameters are passed to `create_or_delete_property` in [_function.py_](function.py).<br>
 That can also be called directly:
 
 ```python
-from proj.scripts.prop.function import prop_fun
+from proj.scripts.prop.function import create_or_delete_property
 
 
-prop_fun('create', 'animals.cat', 'ears')
-prop_fun('delete', 'animals.cat', 'ears')
+create_or_delete_property('create', 'animals.cat', 'ears')
+create_or_delete_property('delete', 'animals.cat', 'ears')
 ```

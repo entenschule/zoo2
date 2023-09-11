@@ -1,7 +1,7 @@
 import sys
 
-from .function import prop_fun
+from .function import create_or_delete_property
 
 
 action, path_string, name = sys.argv[1:4]
-prop_fun(action, path_string, name)
+create_or_delete_property(action, path_string, name)

@@ -1,3 +1,0 @@
-class Dog:
-
-    sound = 'whoof'

@@ -5,7 +5,7 @@ from datetime import datetime
 from importlib import import_module
 
 
-def prop_fun(action, path_string, name):
+def create_or_delete_property(action, path_string, name):
 
     assert action in ['create', 'delete']
     create = action == 'create'

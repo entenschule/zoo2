@@ -1,7 +1,7 @@
 import os
 import pytest
 
-from proj.scripts.prop.function import prop_fun
+from proj.scripts.prop.function import create_or_delete_property
 
 
 this_folder = os.path.dirname(__file__)
@@ -12,7 +12,7 @@ properties_file = os.path.join(proj_folder, 'classes', 'animals', 'cat', 'proper
 
 def test_created_prop():
     try:
-        prop_fun('create', 'animals.cat', 'foo')
+        create_or_delete_property('create', 'animals.cat', 'foo')
 
         from proj.classes.animals.cat.properties.names import names
         assert 'foo' in names  # works
@@ -31,12 +31,12 @@ def test_created_prop():
         cat = Cat()
         assert cat.foo == 'dummy result of property foo'  # FAILS
     finally:
-        prop_fun('delete', 'animals.cat', 'foo')
+        create_or_delete_property('delete', 'animals.cat', 'foo')
 
 
 def test_deleted_prop():
     try:
-        prop_fun('delete', 'animals.cat', 'whiskers')
+        create_or_delete_property('delete', 'animals.cat', 'whiskers')
 
         from proj.classes.animals.cat.properties.names import names
         assert 'whiskers' not in names  # works
@@ -56,4 +56,4 @@ def test_deleted_prop():
         with pytest.raises(AttributeError, match="'Cat' object has no attribute 'whiskers'"):
             cat.whiskers  # FAILS
     finally:
-        prop_fun('create', 'animals.cat', 'whiskers')
+        create_or_delete_property('create', 'animals.cat', 'whiskers')
