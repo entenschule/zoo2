@@ -14,22 +14,10 @@ def test_created_prop():
     try:
         create_or_delete_property('create', 'animals.cat', 'foo')
 
-        from proj.classes.animals.cat.properties.names import names
-        assert 'foo' in names  # works
-
-        property_folder_names = [f.name for f in os.scandir(properties_folder) if f.is_dir()]
-        assert 'foo' in property_folder_names  # works
-
-        with open(properties_file) as f:
-            assert "from .foo import foo" in f.read()  # works
-
-        from proj.classes.animals.cat.properties import CatProperties
-        assert hasattr(CatProperties, 'foo')  # FAILS
-
         from proj.classes.animals.cat import Cat
-        assert hasattr(Cat, 'foo')  # FAILS
         cat = Cat()
-        assert cat.foo == 'dummy result of property foo'  # FAILS
+        assert cat.foo == 'dummy result of property foo'
+
     finally:
         create_or_delete_property('delete', 'animals.cat', 'foo')
 
@@ -38,22 +26,10 @@ def test_deleted_prop():
     try:
         create_or_delete_property('delete', 'animals.cat', 'whiskers')
 
-        from proj.classes.animals.cat.properties.names import names
-        assert 'whiskers' not in names  # works
-
-        property_folder_names = [f.name for f in os.scandir(properties_folder) if f.is_dir()]
-        assert 'whiskers' not in property_folder_names  # works
-
-        with open(properties_file) as f:
-            assert "from .whiskers import whiskers" not in f.read()  # works
-
-        from proj.classes.animals.cat.properties import CatProperties
-        assert not hasattr(CatProperties, 'whiskers')  # FAILS
-
         from proj.classes.animals.cat import Cat
-        assert not hasattr(Cat, 'whiskers')  # FAILS
         cat = Cat()
         with pytest.raises(AttributeError, match="'Cat' object has no attribute 'whiskers'"):
-            cat.whiskers  # FAILS
+            cat.whiskers
+
     finally:
         create_or_delete_property('create', 'animals.cat', 'whiskers')

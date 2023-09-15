@@ -7,4 +7,3 @@ Table rows are appended automatically.
 | create | [whiskers](../../classes/animals/cat/properties/whiskers) | [animals/cat](../../classes/animals/cat) | 2023-08-28, 12:11:13 |
 | create | [tail](../../classes/animals/cat/properties/tail) | [animals/cat](../../classes/animals/cat) | 2023-08-28, 12:11:44 |
 | DELETE | tail | [animals/cat](../../classes/animals/cat) | 2023-08-28, 12:12:01 |
-| create | [foo](../../classes/animals/dog/properties/foo) | [animals/dog](../../classes/animals/dog) | 2023-09-11, 12:18:23 |
