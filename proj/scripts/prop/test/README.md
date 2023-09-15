@@ -1,23 +1,22 @@
 # test creation and deletion of properties
 
-This will test if the function `create_or_delete_property` in [_function.py_](../function.py) works.<br>
-That is the case, if a new property works after adding it,<br>
-and if no traces remain after removing it.<br>
+[These are two tests](_test.py) of the function `create_or_delete_property` in [_function.py_](../function.py).<br>
+The first test asserts, that a new property works after adding it.
 
-
-The tests must be run with the `-m` switch, to add folder _proj_ to the path.
+The tests must be run with the `-m` switch, to add folder _proj_ to the path.<br>
+The following command is to be run in the root folder _zoo2_:
 
 ```
 python -m pytest proj/scripts/prop
 ```
 
-Both tests fail. (Compare [these passing tests](../../../classes/animals/cat/properties/_test.py).)<br>
-They also show, that the update of 
-[_names_](../../../classes/animals/cat/properties/names.py) 
-and [_CatProperties_](../../../classes/animals/cat/properties/__init__.py)
-has worked,<br>
-and that the property folder has been created.<br>
-But the class instance does not reflect the change<br>(although the class is imported after running the script).
+**Both tests fail.** This is because the script somehow imports the _cat_ module in its old state.<br>
+The explicit import in the test does not overwrite it. (See [question on Stackoverflow](https://stackoverflow.com/questions/77081775).)
+
+(Compare [these passing tests](../../../classes/animals/cat/properties/_test.py), which do not involve the script.)
+
+There are [extensive versions](_test_extensive.py) of the two tests,
+which proof, that the files have indeed been changed as expected.
 
 
 ## log
